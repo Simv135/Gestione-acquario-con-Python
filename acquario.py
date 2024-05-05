@@ -1,6 +1,6 @@
 import tkinter as tk                            #importazione delle librerie necessarie
 from tkinter import messagebox
-import time, serial
+import time, serial, webbrowser
 
 class AcquarioApp(tk.Tk):
     def __init__(self):
@@ -57,10 +57,10 @@ class AcquarioApp(tk.Tk):
             self.baud_menu.add_command(label=str(baud_rate), command=lambda b=baud_rate: self.set_baud_rate(b))
         self.baud_menu.entryconfig(0, foreground="green")        #seleziona di default 9600 baud
 
-        #MENU HELP
+        #MENU INFO
         self.info_menu = tk.Menu(self.menu_bar, tearoff=0)
         self.menu_bar.add_cascade(label="Info", menu=self.info_menu)
-        self.info_menu.add_command(label="Github")
+        self.info_menu.add_command(label="Github", command=self.website)    #apertura sito web del progetto
         
         #########################################
 
@@ -122,7 +122,7 @@ class AcquarioApp(tk.Tk):
         self.port_menu_commands.clear()     #cancella le porte precedenti per aggiornare con le nuove disponibili
         self.port_menu.delete(0, "end")
 
-        for n_port in range(30):    #test porte da COM0 a COM30
+        for n_port in range(30):            #test porte da COM0 a COM30
             port = f"COM{n_port}"
             try:
                 self.ser = serial.Serial(port, self.baud_rate)  #testa la connessione su ciascuna porta
@@ -241,7 +241,7 @@ class AcquarioApp(tk.Tk):
             else:
                 luminosita_ = 0
             self.update_luminosita(luminosita_)     #aggiorna il valore di luminosità
-        self.after(20000, self.luminosita)      #attendi 20 secondi prima di aggiornare la luminosità e inviare il nuovo valore
+        self.after(20000, self.luminosita)          #attendi 20 secondi prima di aggiornare la luminosità e inviare il nuovo valore
 
     #ATTIVA/DISATTIVA IL CONTROLLO AUTOMATICO DELLA LUMINOSITA' SECONDO IL CICLO GIORNO-NOTTE
     def ciclo_giorno_notte(self):
@@ -256,7 +256,7 @@ class AcquarioApp(tk.Tk):
         dialog = OrarioFinestra(self, "Modifica orario alba", "hh:mm - hh:mm")  #apre la finestra di dialogo OrarioFinestra per l'alba
         self.wait_window(dialog)    #attende l'azione dell'utente e del valore di orario inserito
         if dialog.result:
-            orari = dialog.result.split(" - ")  #suddivide  dalla stringa l'orario iniziale da quello finale
+            orari = dialog.result.split(" - ")  #suddivide dalla stringa l'orario iniziale da quello finale
             if len(orari) == 2:
                 try:
                     ora_inizio = int(orari[0].replace(":", "")) #intende gli orari senza divisione ore-minuti per semplificare i calcoli
@@ -294,6 +294,10 @@ class AcquarioApp(tk.Tk):
                     messagebox.showerror("Errore", "Inserisci un formato orario valido!")   #se si verifica un errore con i valori inseriti viene mostrato un avviso
             else:
                 messagebox.showerror("Errore", "Inserisci un formato orario valido!")
+
+    #APERTURA SITO WEB
+    def website(self):
+        webbrowser.open('https://github.com/Simv135/Gestione-acquario-con-Python')
 
 #FINESTRA DI DIALOGO PER MODIFICARE L'ORARIO DELLE LUCI
 class OrarioFinestra(tk.Toplevel):

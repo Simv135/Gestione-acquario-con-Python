@@ -16,4 +16,4 @@
   > 
   > ERROR: No matching distribution found for tkinter
  
- Il file è pronto per essere aperto con Python!
+ Il file *"acquario.py"* è pronto per essere aperto con Python!

@@ -18,14 +18,13 @@
   > 
   > ERROR: No matching distribution found for tkinter
  
- Il file *"gestione_acquario_v1"* è pronto per essere aperto con Python!
+ Il file *"gestione_acquario_v1.py"* è pronto per essere aperto con Python!
  
-# Come si usa
+# Modalità d'uso
  L'applicazione si aprirà insieme ad un terminale che può essere utilizzato per osservare lo scambio di dati che avviene tra il computer e il microcontrollore. Esso non è fondamentale 
  per l'utilizzo del programma.
  
- Per la connessione è sufficiente selezionare la porta COM corrispondente alla connessione USB con il nostro microcontrollore e selezionare la velocità di trasmissione dei dati, corrispondente a quella 
- impostata sul microcontrollore.
+ Per la connessione è sufficiente selezionare la **porta COM** corrispondente alla connessione USB con il nostro microcontrollore e selezionare la velocità di trasmissione dei dati (**Baud rate**), corrispondente a quella del microcontrollore.
 
  Se la connessione è avvenuta in modo corretto sarà possibile leggere la temperatura dell'acquario in gradi Celsius, proveniente dal sensore di temperatura connesso al microcontrollore.
 

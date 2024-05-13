@@ -69,7 +69,7 @@ comandi, accettando le procedure di installazione:
  **Dati in scrittura**:
  
  + *0 - 255*     --> Luminosità (0% - 100%)
- + *256 - 257*   --> Piastra riscaldante OFF - ON
+ + *256 - 257*   --> Piastra riscaldante (OFF - ON)
 
  **Dati in lettura**:
  

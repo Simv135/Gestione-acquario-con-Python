@@ -78,6 +78,7 @@ comandi, accettando le procedure di installazione:
 # Il codice
 
 Il codice del programma è basato su alcune librerie che è necessario importare (installate secondo la procedura di installazione)
+
 La libreria "tkinter" è fondamentale per la creazione dell'interfaccia utente, mentre "serial" permette lo scambio di dati tramite comunicazione seriale.
 
 ...

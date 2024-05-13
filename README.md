@@ -57,7 +57,7 @@ comandi, accettando le procedure di installazione:
  ![InfoMENU](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7ed1e28f-340c-4d13-bbd6-943ea943f861)
 
  L'applicazione si aprirà insieme ad un terminale che può essere utilizzato per osservare lo scambio di dati che avviene tra il computer e il microcontrollore. Esso non è fondamentale 
- per l'utilizzo del programma.
+ per l'utilizzo del programma ma è necessario tenerlo aperto.
 
  ![DATA](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/19354984-7024-4a4d-bddf-4498dec26409)
 

@@ -7,7 +7,7 @@
  Il programma, realizzato in *Python 3.12.1* (o superiori), è in grado di funzionare su qualunque sistema operativo che possieda e supporti tale versione.
  
  Dopo l'installazione della corrente versione di Python dal [sito ufficiale](https://www.python.org/downloads/) aprire il terminale (o prompt dei comandi) del proprio sistema operativo e digitare i seguenti 
- comandi, accettando le procedure di installazione:
+comandi, accettando le procedure di installazione:
   + ***pip install tkinter***
   + ***pip install time***
   + ***pip install serial***
@@ -24,7 +24,7 @@
  L'applicazione si aprirà insieme ad un terminale che può essere utilizzato per osservare lo scambio di dati che avviene tra il computer e il microcontrollore. Esso non è fondamentale 
  per l'utilizzo del programma.
  
- Per la connessione è sufficiente selezionare la **porta COM** corrispondente alla connessione USB con il nostro microcontrollore e selezionare la velocità di trasmissione dei dati (**Baud rate**), corrispondente a quella del microcontrollore.
+ Per la connessione è sufficiente selezionare la **porta COM** corrispondente alla connessione USB del nostro microcontrollore e selezionare la velocità di trasmissione dei dati (**Baud rate**) del microcontrollore.
 
  Se la connessione è avvenuta in modo corretto sarà possibile leggere la temperatura dell'acquario in gradi Celsius, proveniente dal sensore di temperatura connesso al microcontrollore.
 
@@ -38,4 +38,20 @@
 
  + **Modalità ciclo giorno-notte**: alla pressione del pulsante *"ciclo giorno-notte"* si attiva la regolazione automatica della luminosità in modo graduale per simulare l'alba o il tramonto all'interno 
  dell'acquario. E' possibile impostare la durata di alba e tramonto dal menu *"Orario"* seguendo la sintassi *"hh:mm - hh:mm"* che indica l'ora di inizio e l'ora di fine dell'evento.
+
+ L'orario preso in considerazione per la regolazione automatica della luminosità sarà quello del nostro dispositivo.
+
+ Nella sezione *"Info"* è disponibile il pulsante Github che riporta l'utente alla pagina web del progetto.
+
+# Specifiche
+ Velocità di trasmissione (Baud rate): 9600, 57600, 115200, 230400 (baud)
+ Range di temperatura regolabile: 15 °C - 30 °C
+
+ Dati in scrittura:
+ 0 - 255  --> Luminosità
+ 256 - 257 --> Piastra riscaldante OFF - ON
+
+ Dati in lettura:
+ 1 °C - 31 °C --> Temperatura del sensore (i dati al di fuori di questo range non verranno presi in considerazione)
+ 
  

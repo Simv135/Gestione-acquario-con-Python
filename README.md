@@ -52,14 +52,14 @@ comandi, accettando le procedure di installazione:
 
  L'orario preso in considerazione per la regolazione automatica della luminosità sarà quello del nostro dispositivo.
 
- All'interno del menu *"Info"* è disponibile la sezione *"Github"* che riporta l'utente alla pagina web del progetto.
-
- ![InfoMENU](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7ed1e28f-340c-4d13-bbd6-943ea943f861)
-
  L'applicazione si aprirà insieme ad un terminale che può essere utilizzato per osservare lo scambio di dati che avviene tra il computer e il microcontrollore. Esso non è fondamentale 
  per l'utilizzo del programma ma è necessario tenerlo aperto.
 
  ![DATA](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/19354984-7024-4a4d-bddf-4498dec26409)
+
+ All'interno del menu *"Info"* è disponibile la sezione *"Github"* che riporta l'utente alla pagina web del progetto.
+
+ ![InfoMENU](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7ed1e28f-340c-4d13-bbd6-943ea943f861)
 
 # Specifiche
  Velocità di trasmissione (Baud rate): *9600*, *57600*, *115200*, *230400* (baud)
@@ -75,4 +75,9 @@ comandi, accettando le procedure di installazione:
  
  + *1 °C - 31 °C* --> Temperatura del sensore (i dati al di fuori di questo range non verranno presi in considerazione)
 
- 
+# Il codice
+
+Il codice del programma è basato su alcune librerie che è necessario importare (installate secondo la procedura di installazione)
+La libreria "tkinter" è fondamentale per la creazione dell'interfaccia utente, mentre "serial" permette lo scambio di dati tramite comunicazione seriale.
+
+...

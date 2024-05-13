@@ -52,7 +52,7 @@ comandi, accettando le procedure di installazione:
 
  L'orario preso in considerazione per la regolazione automatica della luminosità sarà quello del nostro dispositivo.
 
- Nella sezione *"Info"* è disponibile il pulsante Github che riporta l'utente alla pagina web del progetto.
+ Nella sezione del menu *"Info"* è disponibile la sezione *"Github"* che riporta l'utente alla pagina web del progetto.
 
  ![InfoMENU](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7ed1e28f-340c-4d13-bbd6-943ea943f861)
 

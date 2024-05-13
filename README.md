@@ -33,10 +33,11 @@ comandi, accettando le procedure di installazione:
 
  E' possibile controllare automaticamente la **temperatura** del nostro acquario: alla pressione del pulsante *"Termostato"* la temperatura rilevata dal sensore di temperatura sarà comparata con quella impostata manualmente dallo slider e verrà attivata o disattiva una piastra riscaldante al fine di regolare la temperatura dell'acquario.
 
+![TempSLIDER](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/c151843f-c61c-47c5-b1ed-04f97ee7f9bc)
+
  In caso di lettura errata da parte del sensore di temperatura la piastra rimarrà disattivata.
 
- ![Temp](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/c7285d7d-87aa-4471-a3d2-3cc57f72f6d0)
-![TempSLIDER](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/c151843f-c61c-47c5-b1ed-04f97ee7f9bc)
+![DATATinvalid](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/36507ac1-78b9-420c-b431-9a397188663d)
 
  L'**illuminazione** può essere gestita in due modi: **manuale** e **ciclo giorno-notte**
 

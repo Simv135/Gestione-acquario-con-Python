@@ -29,14 +29,14 @@
 
  Se la connessione è avvenuta in modo corretto sarà possibile leggere la temperatura dell'acquario in gradi Celsius, proveniente dal sensore di temperatura connesso al microcontrollore.
 
- E' possibile controllare automaticamente la temperatura del nostro acquario: alla pressione del pulsante "Termostato" la temperatura rilevata dal sensore di temperatura sarà comparata con quella impostata 
- manualmente sullo slider e verrà attivata o disattiva una piastra riscaldante al fine di regolare la temperatura dell'acquario.
+ E' possibile controllare automaticamente la **temperatura** del nostro acquario: alla pressione del pulsante *"Termostato"* la temperatura rilevata dal sensore di temperatura sarà comparata con quella impostata manualmente dallo slider e verrà attivata o disattiva una piastra riscaldante al fine di regolare la temperatura dell'acquario.
 
  In caso di lettura errata da parte del sensore di temperatura la piastra rimarrà disattivata.
 
- L'illuminazione può essere gestita in due modi: manuale e ciclo giorno-notte
+ L'**illuminazione** può essere gestita in due modi: **manuale** e **ciclo giorno-notte**
 
- + Modalità manuale: accensione o spegnimento delle luci tramite pulsante "Illuminazione" (0% o 100%) o regolazione con valori di luminosità intermedi (da 0% a 100%) tramite l'utilizzo dello slider.
+ + **Modalità manuale**: accensione o spegnimento delle luci tramite pulsante *"Illuminazione"* (0% o 100%) o regolazione con valori di luminosità intermedi (da 0% a 100%) tramite l'utilizzo dello slider.
 
- + Modalità 
+ + **Modalità ciclo giorno-notte**: alla pressione del pulsante *"ciclo giorno-notte"* si attiva la regolazione automatica della luminosità in modo graduale per simulare l'alba o il tramonto all'interno 
+ dell'acquario. E' possibile impostare la durata di alba e tramonto dal menu *"Orario"* seguendo la sintassi *"hh:mm - hh:mm"* che indica l'ora di inizio e l'ora di fine dell'evento.
  

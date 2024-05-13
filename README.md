@@ -31,7 +31,7 @@ comandi, accettando le procedure di installazione:
 
 ![Temp](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/4ef568e8-65f8-426a-83be-68ab85f73cd7)
 
- E' possibile controllare automaticamente la **temperatura** del nostro acquario: alla pressione del pulsante *"Termostato"* la temperatura rilevata dal sensore di temperatura sarà comparata con quella impostata manualmente dallo slider e verrà attivata o disattiva una piastra riscaldante al fine di regolare la temperatura dell'acquario.
+ E' possibile controllare automaticamente la **temperatura** del nostro acquario: alla pressione del pulsante *"Termostato"* la temperatura rilevata dal sensore di temperatura sarà comparata con quella impostata manualmente dallo slider e verrà attivata o disattiva automaticamente una piastra riscaldante al fine di regolare la temperatura all'interno dell'acquario.
 
 ![TempSLIDER](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/c151843f-c61c-47c5-b1ed-04f97ee7f9bc)
 

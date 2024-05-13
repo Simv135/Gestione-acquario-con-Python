@@ -54,6 +54,8 @@ comandi, accettando le procedure di installazione:
 
  Nella sezione *"Info"* è disponibile il pulsante Github che riporta l'utente alla pagina web del progetto.
 
+ ![InfoMENU](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7ed1e28f-340c-4d13-bbd6-943ea943f861)
+
  L'applicazione si aprirà insieme ad un terminale che può essere utilizzato per osservare lo scambio di dati che avviene tra il computer e il microcontrollore. Esso non è fondamentale 
  per l'utilizzo del programma.
 
@@ -61,13 +63,16 @@ comandi, accettando le procedure di installazione:
 
 # Specifiche
  Velocità di trasmissione (Baud rate): *9600*, *57600*, *115200*, *230400* (baud)
+
  Range di temperatura regolabile: *15 °C - 30 °C*
 
  **Dati in scrittura**:
- *0 - 255*  --> Luminosità
- *256 - 257* --> Piastra riscaldante OFF - ON
+ 
+ + *0 - 255*     --> Luminosità (0% - 100%)
+ + *256 - 257*   --> Piastra riscaldante OFF - ON
 
  **Dati in lettura**:
- *1 °C - 31 °C* --> Temperatura del sensore (i dati al di fuori di questo range non verranno presi in considerazione)
+ 
+ + *1 °C - 31 °C* --> Temperatura del sensore (i dati al di fuori di questo range non verranno presi in considerazione)
 
  

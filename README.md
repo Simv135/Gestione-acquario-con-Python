@@ -1,4 +1,4 @@
-# Gestione acquario con Python
+![code6](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/b44b3f4f-f367-458e-b2f3-6b569e2ffdb5)# Gestione acquario con Python
  Applicazione che permette la gestione automatica dei parametri principali di un acquario (illuminazione e temperatura) mediante comunicazione seriale con microcontrollore (ad esempio Arduino).
  
  ![GUI](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/5013f7c2-8518-48df-956f-36dd1349c51f)
@@ -95,7 +95,15 @@ Le principali variabili come la temperatura da mantenere, la luminosità imposta
 
 ![code4](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/ec2b4123-81c0-43a8-9eb9-83f2b0e8cfea)
 
-La creazione dei menu e dei suoi elementi, ciascuno dei quali richiama una funzione
+La creazione dei menu in cascata e dei suoi elementi, ciascuno dei quali richiama una funzione (menu *Info* nell'esempio sottostante)
 
 ![code5](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/ee10d6bd-44ae-4d14-9345-7c05f317b213)
+
+In seguito il menu in cascata per il baud rate: per ogni elemento della lista *"baud_rates"* viene aggiunto un elemento al menu in cascata con un comando corrispondente da fornire alla funzione *"set_baud_rate()"* per selezionare il valore desiderato all'interno del menu
+
+![code6](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/efc56952-e941-42c8-b32f-235c16335191)
+
+Esempio di un pulsante che richiama la propria funzione quando premuto, viene definito il suo nome e la sua posizione nella finestra dell'app (pulsante *Illuminazione* nell'esempio sottostante)
+
+![code7](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/9181c0b4-e937-44cc-b1c0-ee29b5a7f889)
 

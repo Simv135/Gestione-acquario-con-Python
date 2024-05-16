@@ -123,7 +123,7 @@ All'avvio dell'app o alla pressione di *"ALT + R"* vengono testate le connession
 
 ![code11](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/dda71044-ed03-446b-9046-e74cd928f43d)
 
-Invio dei valori di luminosità prelevati dalla posizione dello slider nello spazio, successivamente alla conversione da un valore di tipo percentuale 0%-100% ad un valore 0-255. Il valore di luminosità *"0"* comporta un cambio visivo del pulsante per indicare che le luci sono spente.
+Invio dei valori di luminosità prelevati dalla posizione dello slider nello spazio, successivamente alla conversione da un valore di tipo percentuale 0%-100% ad un valore 0-255. Il valore di luminosità *"0"* comporta un cambio di colore del pulsante per indicare che le luci sono spente.
 
 ![code12](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/6d8da238-e46a-4fdf-b876-f31fe6f4559c)
 

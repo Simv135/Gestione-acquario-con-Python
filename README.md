@@ -91,7 +91,7 @@ Si definiscono alcune informazioni della finestra come titolo, dimensioni, il fa
 
 ![code3](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/6fde139c-61fb-44b7-9be0-d88914859e7d)
 
-Le principali variabili come la temperatura da mantenere, la luminosità impostata e gli orari di alba e tramonto per l'illuminazione (NB: orari senza *":"* per facilitare i calcoli)
+Le principali variabili come la temperatura da mantenere, la luminosità impostata e gli orari di alba e tramonto per l'illuminazione
 
 ![code4](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/ec2b4123-81c0-43a8-9eb9-83f2b0e8cfea)
 

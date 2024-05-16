@@ -107,3 +107,27 @@ Esempio di un pulsante che richiama la propria funzione quando premuto, viene de
 
 ![code7](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/9181c0b4-e937-44cc-b1c0-ee29b5a7f889)
 
+Slider per il controllo dell'illuminazione: definizione dei suoi principali parametri (simili a quelli degli altri elementi) e della luminosità di default all'avvio dell'applicazione
+
+![code8](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/d7c06945-aab0-42a9-8289-d4469913b890)
+
+Inizializzazione della connessione seriale con il microcontrollore con porta e baud rate selezionati, attesa di 1 secondo affinchè avvenga la connessione ed invio dei dati al microcontrollore
+
+![code9](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/512de9cf-8e74-45d5-a723-a831e34eeb34)
+
+Quando viene richiamata la funzione *"connect()"* per la connessione seriale senza dei valori da inviare al microcontrollore, se l'argomento della funzione è *""* si entra in una fase di lettura in cui si attende la ricezione dei dati da parte del dispositivo connesso
+
+![code10](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/2207f1d3-7c98-495d-997c-91b2a74fade3)
+
+All'avvio dell'app o alla pressione di *"ALT + R"* vengono testate le connessioni con le porte COM fino alla numero 30, aggiornando di conseguenza il menu in cascata relativo ad esse. Le porte già presenti in lista non vengono nuovamente aggiunte.
+
+![code11](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/dda71044-ed03-446b-9046-e74cd928f43d)
+
+Invio dei valori di luminosità prelevati dalla posizione dello slider nello spazio, successivamente alla conversione da un valore di tipo percentuale 0%-100% ad un valore 0-255. Il valore di luminosità 0 comporta un cambio visivo del pulsante per indicare che le luci sono spente.
+
+![code12](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/6d8da238-e46a-4fdf-b876-f31fe6f4559c)
+
+Avviene una lettura automatica del valore di temperatura ogni 20 secondi. L'argomento della funzione *"self.connect("")"* è vuoto per indicare che nella funzione deve avvenire un'operazione di lettura, come indicato precedentemente.
+
+![code13](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7dbd4527-0546-4aa1-a67d-4af5a338c6f6)
+

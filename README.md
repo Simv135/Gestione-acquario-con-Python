@@ -1,4 +1,4 @@
-![code6](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/b44b3f4f-f367-458e-b2f3-6b569e2ffdb5)# Gestione acquario con Python
+# Gestione acquario con Python
  Applicazione che permette la gestione automatica dei parametri principali di un acquario (illuminazione e temperatura) mediante comunicazione seriale con microcontrollore (ad esempio Arduino).
  
  ![GUI](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/5013f7c2-8518-48df-956f-36dd1349c51f)

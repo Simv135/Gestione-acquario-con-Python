@@ -81,4 +81,21 @@ Il codice del programma è basato su alcune librerie che è necessario importare
 
 La libreria *"tkinter"* è fondamentale per la creazione dell'interfaccia utente, mentre *"serial"* permette lo scambio di dati tramite comunicazione seriale.
 
-...
+![code1](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/57b0946f-7470-46d2-aff9-9de032e70591)
+
+Per la creazione di una nuova finestra è necessaria la creazione di una classe, a cui potranno fare riferimento le relative funzioni
+
+![code2](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/808d9619-1446-428e-b001-7343a924e98b)
+
+Si definiscono alcune informazioni della finestra come titolo, dimensioni, il fatto che la finestra non possa essere ridimensionata, ed il comportamento degli elementi all'interno della finestra
+
+![code3](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/6fde139c-61fb-44b7-9be0-d88914859e7d)
+
+Le principali variabili come la temperatura da mantenere, la luminosità impostata e gli orari di alba e tramonto per l'illuminazione (NB: orari senza *":"* per facilitare i calcoli)
+
+![code4](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/ec2b4123-81c0-43a8-9eb9-83f2b0e8cfea)
+
+La creazione dei menu e dei suoi elementi, ciascuno dei quali richiama una funzione
+
+![code5](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/ee10d6bd-44ae-4d14-9345-7c05f317b213)
+

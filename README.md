@@ -87,7 +87,7 @@ Per la creazione di una nuova finestra è necessaria la creazione di una classe,
 
 ![code2](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/808d9619-1446-428e-b001-7343a924e98b)
 
-Si definiscono alcune informazioni della finestra come titolo, dimensioni, il fatto che la finestra non possa essere ridimensionata, ed il comportamento degli elementi all'interno della finestra
+Si definiscono alcune informazioni della finestra come titolo, dimensioni ed il comportamento degli elementi all'interno della finestra
 
 ![code3](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/6fde139c-61fb-44b7-9be0-d88914859e7d)
 

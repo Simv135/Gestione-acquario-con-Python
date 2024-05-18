@@ -152,4 +152,11 @@ In questa descrizione sono state commentate solo alcune parti fondamentali del c
 
 # Esempio di interfacciamento con Arduino
 
++ Schema di montaggio
+![schema_montaggio_arduino](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/3eb34f3d-02c0-4815-b357-825a4b9c0646)
+
++ Schema elettrico
+![schema_Arduino](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/ee7b7512-9268-4d17-ba2a-429756385952)
+
++ Codice
 ![code_Arduino](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/57d92a21-729b-430b-a86e-207c5e831b58)

@@ -131,3 +131,11 @@ Avviene una lettura automatica del valore di temperatura ogni 20 secondi. L'argo
 
 ![code13](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7dbd4527-0546-4aa1-a67d-4af5a338c6f6)
 
+Controllo dell'orario attuale per il confronto con l'orario preimpostato di alba e tramonto al fine di ottenere una regolazione proporzionale della luminosità:
++ 0 % in fase notturna
++ 0 % - 100 % variazione proporzionale da inizio a fine alba
++ 100 % in fase diurna
++ 100 % - 0 % variazione proporzionale da inizio a fine tramonto
+
+![code14](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/b00dc8d8-153d-4cbf-b759-3d1fc18a35c9)
+

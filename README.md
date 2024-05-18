@@ -115,7 +115,7 @@ Inizializzazione della connessione seriale con il microcontrollore con porta e b
 
 ![code9](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/512de9cf-8e74-45d5-a723-a831e34eeb34)
 
-Quando viene richiamata la funzione *"connect()"* per la connessione seriale senza dei valori da inviare al microcontrollore, se l'argomento della funzione è *""* si entra in una fase di lettura in cui si attende la ricezione dei dati da parte del dispositivo connesso
+Quando viene richiamata la funzione *"connect()"* per la connessione seriale senza dei valori da inviare al microcontrollore e se l'argomento della funzione è *""* si entra in una fase di lettura in cui si attende la ricezione dei dati da parte del dispositivo connesso
 
 ![code10](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/2207f1d3-7c98-495d-997c-91b2a74fade3)
 

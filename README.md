@@ -68,12 +68,12 @@ comandi, accettando le procedure di installazione:
 
  **Dati in scrittura**:
  
- + *0 - 255*     --> Luminosità (0% - 100%)
- + *256 - 257*   --> Piastra riscaldante (OFF - ON)
+ + *0 - 255*   --> Luminosità (0% - 100%)
+ + *256 - 257* --> Piastra riscaldante (OFF - ON)
 
  **Dati in lettura**:
  
- + *1 - 31* --> Temperatura del sensore (°C), i dati al di fuori di questo range non verranno presi in considerazione
+ + *1 - 31*    --> Temperatura del sensore (°C), i dati al di fuori di questo range non verranno presi in considerazione
 
 # Il codice
 
@@ -127,25 +127,25 @@ Invio dei valori di luminosità prelevati dalla posizione dello slider nello spa
 
 ![code12](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/6d8da238-e46a-4fdf-b876-f31fe6f4559c)
 
-Avviene una lettura automatica del valore di temperatura ogni 20 secondi. L'argomento della funzione *"self.connect("")"* è vuoto per indicare che nella funzione deve avvenire un'operazione di lettura, come indicato precedentemente.
+Lettura automatica del valore di temperatura ogni 20 secondi. L'argomento della funzione *"self.connect("")"* è vuoto per indicare che nella funzione deve avvenire un'operazione di lettura, come indicato precedentemente.
 
 ![code13](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7dbd4527-0546-4aa1-a67d-4af5a338c6f6)
 
-Controllo dell'orario attuale per il confronto con l'orario preimpostato di alba e tramonto al fine di ottenere una regolazione proporzionale della luminosità:
-+ 0 % in fase notturna
-+ 0 % - 100 % controllo proporzionale inizio - fine alba
-+ 100 % in fase diurna
-+ 100 % - 0 % controllo proporzionale inizio - fine tramonto
-
-![code14](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/b00dc8d8-153d-4cbf-b759-3d1fc18a35c9)
-
 Gli orari prelevati dalla finestra di dialogo inseriti come "ORA_INIZIO:MINUTO_INIZIO - ORA_FINE:MINUTO_FINE"
-+ vengono suddivisi in una lista come "ORA_INIZIO:MINUTO_INIZIO" e "ORA_FINE:MINUTO_FINE"
++ vengono suddivisi in una lista come *"ORA_INIZIO:MINUTO_INIZIO"* e *"ORA_FINE:MINUTO_FINE"*
 
 ![code15](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/83051718-7d9f-4887-9beb-6b050d1114d2)
 
-+ e poi adattati come una somma di stringhe "ORA_INIZIO + MINUTO_INIZIO" (ad esempio 19:00 diventa 1900)
++ e poi adattati come una somma di stringhe *"ORA_INIZIO + MINUTO_INIZIO"* (ad esempio *"19:00"* diventa *"1900"*)
 
 ![code16](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/3bc117c7-9f5b-4b03-8766-c87255c5ea3b)
+
+Controllo dell'orario attuale per il confronto con l'orario preimpostato di alba e tramonto al fine di ottenere una regolazione proporzionale della luminosità:
++ *0 %*         --> in fase notturna
++ *0 % - 100 %* --> controllo proporzionale inizio - fine alba
++ *100 %*       --> in fase diurna
++ *100 % - 0 %* --> controllo proporzionale inizio - fine tramonto
+
+![code14](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/b00dc8d8-153d-4cbf-b759-3d1fc18a35c9)
 
 In questa descrizione sono state commentate solo alcune parti fondamentali del codice, è possibile leggere l'intero codice commentato aprendo il file del programma con un qualsiasi editor di testo.

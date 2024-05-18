@@ -73,7 +73,7 @@ comandi, accettando le procedure di installazione:
 
  **Dati in lettura**:
  
- + *1 °C - 31 °C* --> Temperatura del sensore (i dati al di fuori di questo range non verranno presi in considerazione)
+ + *1 - 31* --> Temperatura del sensore (°C), i dati al di fuori di questo range non verranno presi in considerazione
 
 # Il codice
 

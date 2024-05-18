@@ -6,26 +6,21 @@
 # Installazione
  Il programma, realizzato in *Python 3.12.1* (o superiori), è in grado di funzionare su qualunque sistema operativo che possieda e supporti tale versione.
  
- Dopo l'installazione della corrente versione di Python dal [sito ufficiale](https://www.python.org/downloads/) aprire il terminale (o prompt dei comandi) del proprio sistema operativo e digitare i seguenti 
-comandi, accettando le procedure di installazione:
+ Dopo l'installazione della corrente versione di Python dal [sito ufficiale](https://www.python.org/downloads/) aprire il terminale (o prompt dei comandi) del proprio sistema operativo e digitare i seguenti comandi:
   + `pip install tkinter`
   + `pip install time`
   + `pip install serial`
   + `pip install webbrowser`
- 
- Se dovesse verificarsi questo errore la libreria è già installata:
-  > ERROR: Could not find a version that satisfies the requirement tkinter (from versions: none)
-  > 
-  > ERROR: No matching distribution found for tkinter
- 
- Il file *"gestione_acquario_v1.py"* è pronto per essere aperto con Python!
- 
+
+ed accettare le procedure di installazione.
+
+Il file *"gestione_acquario_v1.py"* è pronto per essere aperto con Python!
+
 # Modalità d'uso
  Per la connessione è sufficiente selezionare la **porta COM** corrispondente alla connessione USB del nostro microcontrollore e selezionare la velocità di trasmissione dei dati (**Baud rate**) del microcontrollore.
 
 ![PortMENU](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/a58586ba-6dff-4b94-979a-2ebaf0cb5ce1)
-
-![BaudMENU](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/9bfc9bcb-a000-411b-9653-d2295b1ddec7)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/9bfc9bcb-a000-411b-9653-d2295b1ddec7" width=25% height=80%>
 
  Se la connessione è avvenuta in modo corretto sarà possibile leggere la temperatura dell'acquario in gradi Celsius, proveniente dal sensore di temperatura connesso al microcontrollore.
 
@@ -33,7 +28,7 @@ comandi, accettando le procedure di installazione:
 
  E' possibile controllare automaticamente la **temperatura** del nostro acquario: alla pressione del pulsante *"Termostato"* la temperatura rilevata dal sensore di temperatura sarà comparata con quella impostata manualmente dallo slider e verrà attivata o disattiva automaticamente una piastra riscaldante al fine di regolare la temperatura all'interno dell'acquario.
 
-![TempSLIDER](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/c151843f-c61c-47c5-b1ed-04f97ee7f9bc)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/c151843f-c61c-47c5-b1ed-04f97ee7f9bc" width=10%>
 
  In caso di lettura errata da parte del sensore di temperatura la piastra rimarrà disattivata.
 
@@ -43,12 +38,12 @@ comandi, accettando le procedure di installazione:
 
  + **Modalità manuale**: accensione o spegnimento delle luci tramite pulsante *"Illuminazione"* (0% o 100%) o regolazione con valori di luminosità intermedi (da 0% a 100%) tramite l'utilizzo dello slider.
 
-![LuxSLIDER](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/d6c436df-b270-4d1c-a11d-4f4854e0f70b)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/d6c436df-b270-4d1c-a11d-4f4854e0f70b" width=10%>
 
  + **Modalità ciclo giorno-notte**: alla pressione del pulsante *"ciclo giorno-notte"* si attiva la regolazione automatica della luminosità in modo graduale per simulare l'alba o il tramonto all'interno 
  dell'acquario. E' possibile impostare la durata di alba e tramonto dal menu *"Orario"* seguendo la sintassi *"hh:mm - hh:mm"* che indica l'ora di inizio e l'ora di fine dell'evento.
 
-![OrarioMENU](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/4e0db3a3-a1fe-419a-a699-0e9052f6d0df)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/4e0db3a3-a1fe-419a-a699-0e9052f6d0df" width=20%>
 
  L'orario preso in considerazione per la regolazione automatica della luminosità sarà quello del nostro dispositivo.
 
@@ -73,7 +68,9 @@ comandi, accettando le procedure di installazione:
 
  **Dati in lettura**:
  
- + *1 - 31*    --> Temperatura del sensore (°C), i dati al di fuori di questo range non verranno presi in considerazione
+ + *1 - 31*    --> Temperatura del sensore (°C)
+
+	i dati al di fuori di questo range non verranno presi in considerazione
 
 # Il codice
 
@@ -113,25 +110,25 @@ Slider per il controllo dell'illuminazione: definizione dei suoi principali para
 
 Inizializzazione della connessione seriale con il microcontrollore con porta e baud rate selezionati, attesa di 1 secondo affinchè avvenga la connessione ed invio dei dati al microcontrollore
 
-![code9](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/512de9cf-8e74-45d5-a723-a831e34eeb34)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/512de9cf-8e74-45d5-a723-a831e34eeb34" width=60%>
 
 Quando viene richiamata la funzione *"connect()"* per la connessione seriale senza dei valori da inviare al microcontrollore e se l'argomento della funzione è *""* si entra in una fase di lettura in cui si attende la ricezione dei dati da parte del dispositivo connesso
 
-![code10](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/2207f1d3-7c98-495d-997c-91b2a74fade3)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/2207f1d3-7c98-495d-997c-91b2a74fade3" width=50%>
 
 All'avvio dell'app o alla pressione di *"ALT + R"* vengono testate le connessioni con le porte COM fino alla numero 30, aggiornando di conseguenza il menu in cascata relativo ad esse. Le porte già presenti in lista non vengono nuovamente aggiunte.
 
-![code11](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/dda71044-ed03-446b-9046-e74cd928f43d)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/dda71044-ed03-446b-9046-e74cd928f43d" width=80%>
 
 Invio dei valori di luminosità prelevati dalla posizione dello slider nello spazio, successivamente alla conversione da un valore di tipo percentuale 0%-100% ad un valore 0-255. Il valore di luminosità *"0"* comporta un cambio di colore del pulsante per indicare che le luci sono spente.
 
-![code12](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/6d8da238-e46a-4fdf-b876-f31fe6f4559c)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/6d8da238-e46a-4fdf-b876-f31fe6f4559c" width=60%>
 
 Lettura automatica del valore di temperatura ogni 20 secondi. L'argomento della funzione *"self.connect("")"* è vuoto per indicare che nella funzione deve avvenire un'operazione di lettura, come indicato precedentemente.
 
 ![code13](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/7dbd4527-0546-4aa1-a67d-4af5a338c6f6)
 
-Gli orari prelevati dalla finestra di dialogo inseriti come "ORA_INIZIO:MINUTO_INIZIO - ORA_FINE:MINUTO_FINE"
+Orari nella finestra di dialogo inseriti come "ORA_INIZIO:MINUTO_INIZIO - ORA_FINE:MINUTO_FINE"
 + vengono suddivisi in una lista come *"ORA_INIZIO:MINUTO_INIZIO"* e *"ORA_FINE:MINUTO_FINE"*
 
 ![code15](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/83051718-7d9f-4887-9beb-6b050d1114d2)
@@ -148,18 +145,20 @@ Controllo dell'orario attuale per il confronto con l'orario preimpostato di alba
 
 ![code14](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/b00dc8d8-153d-4cbf-b759-3d1fc18a35c9)
 
-In questa descrizione sono state commentate solo alcune parti fondamentali del codice, è possibile leggere l'intero codice commentato aprendo il file del programma con un qualsiasi editor di testo.
+In questa descrizione sono state commentate solo alcune parti fondamentali del codice.
+
+E' possibile leggere l'intero codice commentato aprendo il file del programma con un qualsiasi editor di testo.
 
 # Esempio di interfacciamento con Arduino
 
 ## Schema di montaggio
 
-![schema_montaggio_arduino](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/3eb34f3d-02c0-4815-b357-825a4b9c0646)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/3eb34f3d-02c0-4815-b357-825a4b9c0646" width=80% height=80%>
 
 ## Schema elettrico
 
-![schema_Arduino](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/ee7b7512-9268-4d17-ba2a-429756385952)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/ee7b7512-9268-4d17-ba2a-429756385952" width=100% height=100%>
 
 ## Codice
 
-![code_Arduino](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/57d92a21-729b-430b-a86e-207c5e831b58)
+<img src="https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/57d92a21-729b-430b-a86e-207c5e831b58" width=100% height=100%>

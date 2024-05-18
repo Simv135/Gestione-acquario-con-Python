@@ -139,7 +139,7 @@ Controllo dell'orario attuale per il confronto con l'orario preimpostato di alba
 
 ![code14](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/b00dc8d8-153d-4cbf-b759-3d1fc18a35c9)
 
-Gli orari prelevati dalla finestra di dialogo per la selezione degli orari di alba o tramonto inseriti come "ORA_INIZIO:MINUTO_INIZIO - ORA_FINE:MINUTO_FINE"
+Gli orari prelevati dalla finestra di dialogo inseriti come "ORA_INIZIO:MINUTO_INIZIO - ORA_FINE:MINUTO_FINE"
 + vengono suddivisi in una lista come "ORA_INIZIO:MINUTO_INIZIO" e "ORA_FINE:MINUTO_FINE"
 
 ![code15](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/83051718-7d9f-4887-9beb-6b050d1114d2)
@@ -147,3 +147,5 @@ Gli orari prelevati dalla finestra di dialogo per la selezione degli orari di al
 + e poi adattati come una somma di stringhe "ORA_INIZIO + MINUTO_INIZIO" (ad esempio 19:00 diventa 1900)
 
 ![code16](https://github.com/Simv135/Gestione-acquario-con-Python/assets/109431365/3bc117c7-9f5b-4b03-8766-c87255c5ea3b)
+
+In questa descrizione sono state commentate solo alcune parti fondamentali del codice, è possibile leggere l'intero codice commentato aprendo il file del programma con un qualsiasi editor di testo.
